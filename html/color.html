@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>QiMessaging (メモリに出力)</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="/libs/qimessaging/1.0/qimessaging.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </head>
+  <body>
+    <img src="images/top03.png" alt="" class="top" onclick="goTop();">
+    <img src="images/interrupt06.png" alt="" class="interrupt" onclick="interrupt();">
+    <form name="js" class="title">
+      名前：<input type="text" name="txtb" value="" style="WIDTH: 355px; HEIGHT: 100px"><br>
+      <input type="button" value="Pepperに送信" onclick="fromtablet()" style="WIDTH: 400px; HEIGHT: 100px"><br>
+      <input type="button" value="消去" onclick="clr()" style="WIDTH: 400px; HEIGHT: 100px"><br>
+    </form>
+      <div class="button_wrapper2">
+        <button class="btn_finish" type="button" onclick="finish();">アプリ終了</button>
+      </div>
+  </body>
+  <script>
+  var session = new QiSession();
+
+  function fromtablet() {
+    var str1=document.js.txtb.value;
+    session.service("ALMemory").done(function (ALMemory) {
+      ALMemory.raiseEvent("PepperQiMessaging/fromtablet", str1);
+    });
+  }
+  //テキストボックスの文字を操作する
+  function clr(){
+    document.js.txtb.value="";
+  }
+  </script>
+</html>

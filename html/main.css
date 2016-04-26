@@ -1,0 +1,154 @@
+﻿h4 {
+  position: relative;
+  color: #111;
+  background: #97FFDC;
+  font-size: 6em;
+  line-height: 1;
+  margin: 30px 0 10px 0;
+  padding: 14px 5px 10px 40px;
+  box-shadow: 0 1px 3px #777;
+  border-radius: 100px;
+  text-align: center;
+}
+h4:before {
+  content: "";
+  position: absolute;
+  background: #14BA82;
+  top: 50%;
+  left: 10px;
+  margin-top :-50px;
+  height: 100px;
+  width: 100px;
+  box-shadow: 1px 1px 1px #777;
+  border-radius: 50%;
+}
+h4:after {
+  content: "";
+  position: absolute;
+  background:#0AEFA3;
+  top: 50%;
+  left: 10px;
+  margin-top:-50px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+.p{
+    position: relative;
+    color: #11AAFF;
+    font-size: 5em;
+    font-weight: bold;
+    text-align: center;
+}
+.p2{
+    position: relative;
+    color: #111111;
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+}
+.btn1{
+	font-size: 8em;
+    font-weight:bold;
+    padding:80px 150px 80px;
+    color:#fff;
+    background-color:#F6CECE;
+    border-radius:50px;
+    text-shadow:-2px -2px #555;
+    box-shadow:3px 3px #555;
+}
+.btn2{
+    font-size: 8em;
+    font-weight:bold;
+    padding:80px 150px 80px;
+    color:#fff;
+    background-color:#E3F6CE;
+    border-radius:50px;
+    text-shadow:-1px -1px #555;
+    box-shadow:3px 3px #555;
+}
+.btn3{
+    font-size: 8em;
+    font-weight:bold;
+    padding:80px 150px 80px;
+    color:#fff;
+    background-color:#CEE3F6;
+    border-radius:50px;
+    text-shadow:-1px -1px #555;
+    box-shadow:3px 3px #555;
+}
+.btn4{
+    font-size: 4em;
+    font-weight:bold;
+    padding:8px 150px 8px;
+    color:#fff;
+    background-color:#F6E3CE;
+    border-radius:50px;
+    text-shadow:-1px -1px #555;
+    box-shadow:3px 3px #555;
+}
+.btn_finish{
+    font-size: 4em;
+    font-weight:bold;
+    padding:8px 0 10px;
+    color:#111;
+    background-color:#e6e6fa;
+    border-radius:10px;
+    text-shadow:-1px -1px #555;
+}
+.btn:active {
+    box-shadow:
+        0 0 0 15px #49a9d4,
+}
+.button_wrapper{
+	text-align: center;
+}
+.button_wrapper2{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.title{
+    position: absolute;
+    top: 180px;
+    left: 30%;
+}
+
+.boxContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    /* 長くなるのでベンダープレフィックスの記述は省略 */
+}
+
+.table {
+    position:relative;
+    top:300px; 
+}
+
+.tr {
+    margin: 40px;
+}
+
+.text{
+    font-size: 5em;
+    text-align: center
+}
+
+body{
+  background-image: url(images/Pepper_BG01.png);
+}
+
+.top{
+	position:absolute;
+	top:0px;
+	left:0px;
+  opacity:0.8;
+}
+.interrupt{
+	position:absolute;
+	top:0px;
+	right:0px;
+  opacity:0.8;
+}
