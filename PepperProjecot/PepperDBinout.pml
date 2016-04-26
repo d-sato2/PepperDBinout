@@ -40,7 +40,6 @@
         <File name="_semaphore" src="lib/gevent/_semaphore.pyd" />
         <File name="_socket2" src="lib/gevent/_socket2.py" />
         <File name="_socket2" src="lib/gevent/_socket2.pyc" />
-        <File name="_socket3" src="lib/gevent/_socket3.py" />
         <File name="_socketcommon" src="lib/gevent/_socketcommon.py" />
         <File name="_socketcommon" src="lib/gevent/_socketcommon.pyc" />
         <File name="_ssl2" src="lib/gevent/_ssl2.py" />
